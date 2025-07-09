@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta de Servicios Web - Orbitravel.pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0f172a; /* slate-900 */
+        }
+        .animated-gradient-text {
+            background: linear-gradient(90deg, #60a5fa, #a78bfa, #f472b6, #60a5fa);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient-flow 5s linear infinite;
+        }
+        @keyframes gradient-flow {
+            0% { background-position: 0% center; }
+            100% { background-position: 200% center; }
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.6); /* slate-800 with opacity */
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(51, 65, 85, 0.5); /* slate-700 with opacity */
+        }
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .scroll-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 1.25rem;
+            top: 1.5rem;
+            bottom: 1.5rem;
+            width: 3px;
+            background-color: #334155; /* slate-700 */
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body class="text-slate-300">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-4xl">
+
+        <!-- Header -->
+        <header class="text-center my-16 scroll-reveal">
+            <p class="text-lg text-blue-400 font-semibold mb-2">Propuesta de Colaboración Tecnológica</p>
+            <h1 class="text-5xl md:text-6xl font-extrabold text-slate-100 tracking-tight">
+                Evolución Digital para <span class="animated-gradient-text">Orbitravel</span>
+            </h1>
+            <div class="mt-6 text-slate-400">
+                <p>Preparado para: <span class="font-bold text-white">El equipo de Orbitravel</span></p>
+                <p>Fecha: <span class="font-bold text-white">9 de Julio, 2025</span></p>
+            </div>
+        </header>
+
+        <main class="relative timeline space-y-16">
+
+            <!-- Phase 1: Initial Setup -->
+            <section class="scroll-reveal pl-10 relative">
+                <div class="absolute left-0 top-6 w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center border-4 border-slate-900" style="transform: translateX(-50%);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.3.05-3.18-.65-.87-2.12-1.51-3.18-.05z"/><path d="m12 15-3-3a9 9 0 0 1 3-7 9 9 0 0 1 7 3l-3 3a9 9 0 0 1-7-3z"/></svg>
+                </div>
+                <div class="glass-card p-6 sm:p-8 rounded-2xl transition-all duration-300 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-500/10">
+                    <h3 class="text-2xl font-bold text-white mb-1">Fase 1: Puesta en Marcha y Soporte</h3>
+                    <p class="text-blue-300 mb-6">Activación de la plataforma y servicios de soporte base.</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <!-- UPDATED SECTION -->
+                        <div class="bg-slate-900/50 p-5 rounded-lg border border-slate-700 flex flex-col">
+                            <p class="font-semibold text-lg text-slate-200">Inversión Única</p>
+                            <p class="text-sm text-slate-400 mb-3 flex-grow">Incluye el dominio <b class="text-blue-300 mx-1">orbitravel.pro</b> y el hosting correspondiente. Aquí albergaremos todas las mejoras para la empresa (comprobantes, contratos, itinerarios, etc.).</p>
+                            <p class="text-4xl font-bold text-white mt-2">$80.000</p>
+                        </div>
+                        <!-- END UPDATED SECTION -->
+                        <div class="bg-slate-900/50 p-5 rounded-lg border border-slate-700 flex flex-col">
+                             <p class="font-semibold text-lg text-slate-200">Honorarios Base</p>
+                             <p class="text-sm text-slate-400 mb-3 flex-grow">Programación, mantenimiento y soporte continuo.</p>
+                             <p class="text-4xl font-bold text-white mt-2">$150.000</p>
+                             <p class="text-slate-400 text-sm">Mensual</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-700">
+                        <p class="font-semibold text-slate-200 mb-3">Servicios Incluidos:</p>
+                        <ul class="space-y-2 text-slate-400 list-disc list-inside">
+                            <li>Puesta en marcha completa de sistemas para <span class="font-semibold text-blue-300">Orbitravel.pro</span>.</li>
+                            <li>Actualizaciones de software y corrección de errores.</li>
+                            <li>Soporte y gestión web con plataformas de terceros (Orbitravel.cl).</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Phase 2: Future Upgrade -->
+            <section class="scroll-reveal pl-10 relative">
+                <div class="absolute left-0 top-6 w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center border-4 border-slate-900" style="transform: translateX(-50%);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/></svg>
+                </div>
+                <div class="glass-card p-6 sm:p-8 rounded-2xl transition-all duration-300 hover:border-purple-500 hover:shadow-2xl hover:shadow-purple-500/10">
+                    <h3 class="text-2xl font-bold text-white mb-1">Fase 2: Expansión de Funcionalidades</h3>
+                    <p class="text-purple-300 mb-6">Implementación de itinerarios propios y autonomía total.</p>
+                    <div class="bg-slate-900/50 p-6 rounded-lg border border-slate-700">
+                        <p class="font-semibold text-lg text-slate-200">Nueva Tarifa de Honorarios</p>
+                        <p class="text-sm text-slate-400 mb-3">Se activa al descontinuar la suscripción a Mogu.</p>
+                        <p class="text-4xl font-bold text-white">$300.000</p>
+                        <p class="text-slate-400 text-sm">Mensual (Base $150.000 + Expansión $150.000)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Future Vision -->
+            <section class="scroll-reveal pl-10 relative">
+                <div class="absolute left-0 top-6 w-10 h-10 bg-green-500 rounded-full flex items-center justify-center border-4 border-slate-900" style="transform: translateX(-50%);">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-white"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+                </div>
+                <div class="glass-card p-6 sm:p-8 rounded-2xl transition-all duration-300 hover:border-green-500 hover:shadow-2xl hover:shadow-green-500/10">
+                    <h3 class="text-2xl font-bold text-white mb-1">Visión a Futuro y Compromiso</h3>
+                    <p class="text-green-300 mb-6">Una alianza estratégica para el crecimiento continuo.</p>
+                    <div class="text-slate-400 space-y-4">
+                        <p>Nos comprometemos a integrar continuamente nuevas herramientas que optimicen la gestión y el rendimiento de todo el equipo. Estas mejoras futuras se incluirán en la tarifa de servicio mensual.</p>
+                        <p class="font-medium text-slate-200">Para asegurar una colaboración justa y alineada con los objetivos de la empresa, la tarifa de servicios será reevaluada en 6 meses.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Signature -->
+        <footer class="text-center mt-24 py-8 border-t border-slate-800 scroll-reveal">
+            <p class="text-xl font-bold text-white">Sami Donoso</p>
+            <p class="text-slate-400">Consultor y Desarrollador de Soluciones Digitales</p>
+        </footer>
+    </div>
+
+    <script>
+        // Simple scroll reveal animation
+        const revealElements = document.querySelectorAll('.scroll-reveal');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        revealElements.forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
+
+
